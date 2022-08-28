@@ -1,5 +1,8 @@
 # ngx-shareable
-An umbrella project for libraries.
+An umbrella project.
 
 ## peta-byte
-A Nx monorepo with a publishable Angular component library, a related application, and a Nestjs api.
+A [Nx](https://nx.dev/) monorepo with:
+- a publishable Angular component library
+- a related application
+- a Nestjs api.
