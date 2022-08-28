@@ -1,0 +1,37 @@
+:host {
+  z-index: 20;
+  transition: 2s;
+  position: fixed;
+  height: 100%;
+  box-shadow: 1px 0 10px  var(--md-sys-color-shadow);
+
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .header {
+      border-bottom: 1px solid var(--md-sys-color-on-primary);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 3px;
+      margin: 10px 0;
+      gap: 10px;
+
+      h2 {
+        margin: 5px 0;
+      }
+    }
+
+    .content {
+      padding: 0 10px;
+      margin: 0;
+      height: 100%;
+
+      .no-data {
+        text-align: center;
+      }
+    }
+  }
+}

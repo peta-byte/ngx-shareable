@@ -1,0 +1,25 @@
+{
+  "name": "@peta-byte/ui-medley",
+  "version": "0.1.2",
+  "license": "UNLICENSED",
+  "author": "Brenda Chepkorir",
+  "peerDependencies": {
+    "@angular/common": "^14.1.0",
+    "@angular/core": "^14.1.0",
+    "bootstrap-icons": "^1.9.1"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "exports": {
+    "./assets/css": {
+      "colors": "./colors.module.css",
+      "typography": "./typography.module.css",
+      "light-theme": "./theme.light.css",
+      "dark-theme": "./theme.dark.css",
+      "theme": "./theme.css",
+      "tokens": "./tokens.css"
+    }
+  },
+  "keywords": ["nx", "angular", "library", "components"]
+}
