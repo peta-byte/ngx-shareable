@@ -1,0 +1,9 @@
+<li>
+  <i class="bi" [ngClass]="{'bi-caret-down': data.children?.length, 'bi-dot': !(data.children?.length) }" (click)="clicked($event)"></i>
+  <a *ngIf="data.url" [href]="data.url">{{data.name}}</a>
+  <span *ngIf="!data.url">{{data.name}}</span>
+  <ul *ngIf="data.children?.length">
+      <peta-byte-list-item [ngClass]="{ 'hideChildren': click }" [data]="child" [id]="child?.id" *ngFor="let child of data?.children">
+      </peta-byte-list-item>
+  </ul>
+</li>

@@ -1,0 +1,16 @@
+<div class="list-group on-primary-text primary body-large">
+  <div class="header" *ngIf="header">
+    <h2 [innerText]="header" class="headline-medium"></h2>
+    <i class="bi bi-x-lg" (click)="close()"></i>
+  </div>
+  <ul class="content" *ngIf="listData?.length else noData">
+      <peta-byte-list-item [data]="itm" [id]="itm?.id" *ngFor="let itm of listData">
+      </peta-byte-list-item>
+  </ul>
+</div>
+
+<ng-template #noData>
+  <div class="content on-primary-text primary body-large">
+    <p class="no-data">Woops! No data.</p>
+  </div>
+</ng-template>
