@@ -4,17 +4,23 @@
 @import url(theme.light.css) (prefers-color-scheme: light);
 @import url(theme.dark.css) (prefers-color-scheme: dark);
 
-i {
+i,button {
   cursor: pointer;
 }
 .primary-button {
   width: fit-content;
   min-width: 50px;
   min-height: 25px;
+  background-color: var(--md-sys-color-primary);
+  box-shadow: 1px 0 3px  var(--md-sys-color-shadow);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5%;
+  margin: 3px;
 }
 .primary-button > button {
   border: none;
-  box-shadow: 1px 0 10px  var(--md-sys-color-shadow);
   background-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary);
 }

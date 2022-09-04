@@ -1,5 +1,11 @@
 <peta-byte-menu-bar [menuConfig]="menuConfig"></peta-byte-menu-bar>
 <peta-byte-list-group [header]="listHeader" [listData]="data" [display]="display" (hide)="closeSidebarMenu()"></peta-byte-list-group>
-
-<peta-byte-button [buttonText]="'OK'" petaByteButtonPrimary></peta-byte-button>
+<peta-byte-card>
+  <ng-template petaByteCardHeader>
+    <h2>Header</h2>
+  </ng-template>
+  <ng-template petaByteCardFooter>
+    <peta-byte-button [buttonText]="'OK'" petaByteButtonPrimary></peta-byte-button>
+  </ng-template>
+</peta-byte-card>
 <router-outlet></router-outlet>

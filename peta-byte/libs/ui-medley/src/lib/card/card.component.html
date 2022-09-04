@@ -1,1 +1,9 @@
-<p>card works!</p>
+<div *ngIf="header" class="card-header">
+  <ng-container [ngTemplateOutlet]="header.templateRef"></ng-container>
+</div>
+<div *ngIf="content" class="card-content">
+  <ng-container [ngTemplateOutlet]="content.templateRef"></ng-container>
+</div>
+<div *ngIf="footer" class="card-footer">
+  <ng-container [ngTemplateOutlet]="footer.templateRef"></ng-container>
+</div>

@@ -5,5 +5,8 @@ export * from './lib/menu-bar/menu-bar.component';
 export * from './lib/button/button.component';
 export * from './lib/button/button-primary.directive';
 export * from './lib/card/card.component';
+export * from './lib/card/card-header.directive';
+export * from './lib/card/card-content.directive';
+export * from './lib/card/card-footer.directive';
 export * from './interfaces/list-group.interface';
 export * from './interfaces/menu-bar.interface';
